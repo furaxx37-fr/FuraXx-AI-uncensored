@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uncensored Chat - Llama Enhanced - Démo Complète</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber': '#00ff41',
+                        'dark-bg': '#0a0a0a',
+                        'card-bg': '#1a1a1a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-white min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-5xl font-bold bg-gradient-to-r from-cyber to-green-400 bg-clip-text text-transparent mb-4">
+                🚀 Uncensored Chat - Llama Enhanced
+            </h1>
+            <p class="text-xl text-gray-300 mb-6">Interface Web Complète avec IA Non-Censurée</p>
+            
+            <!-- Status Badge -->
+            <div id="status-badge" class="inline-flex items-center px-4 py-2 rounded-full bg-yellow-600 text-white mb-6">
+                <div class="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                Chargement du statut...
+            </div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div class="bg-card-bg p-6 rounded-lg border border-gray-700">
+                <div class="text-cyber text-2xl mb-3">🤖</div>
+                <h3 class="text-xl font-bold mb-2">IA Non-Censurée</h3>
+                <p class="text-gray-400">Modèle Llama-2-7B sans restrictions, conversations libres et authentiques</p>
+            </div>
+            
+            <div class="bg-card-bg p-6 rounded-lg border border-gray-700">
+                <div class="text-cyber text-2xl mb-3">🎨</div>
+                <h3 class="text-xl font-bold mb-2">Génération d'Images</h3>
+                <p class="text-gray-400">Stable Diffusion intégré pour créer des images à partir de descriptions</p>
+            </div>
+            
+            <div class="bg-card-bg p-6 rounded-lg border border-gray-700">
+                <div class="text-cyber text-2xl mb-3">💾</div>
+                <h3 class="text-xl font-bold mb-2">Historique Persistant</h3>
+                <p class="text-gray-400">Sauvegarde automatique des conversations et gestion des sessions</p>
+            </div>
+            
+            <div class="bg-card-bg p-6 rounded-lg border border-gray-700">
+                <div class="text-cyber text-2xl mb-3">⚡</div>
+                <h3 class="text-xl font-bold mb-2">Performance Optimisée</h3>
+                <p class="text-gray-400">Serveur llama.cpp natif pour des réponses rapides et efficaces</p>
+            </div>
+            
+            <div class="bg-card-bg p-6 rounded-lg border border-gray-700">
+                <div class="text-cyber text-2xl mb-3">🔧</div>
+                <h3 class="text-xl font-bold mb-2">Multi-Providers</h3>
+                <p class="text-gray-400">Support OpenAI, Anthropic, et serveurs locaux avec fallback automatique</p>
+            </div>
+            
+            <div class="bg-card-bg p-6 rounded-lg border border-gray-700">
+                <div class="text-cyber text-2xl mb-3">🌐</div>
+                <h3 class="text-xl font-bold mb-2">Interface Moderne</h3>
+                <p class="text-gray-400">Design responsive avec thème sombre et animations fluides</p>
+            </div>
+        </div>
+
+        <!-- Demo Links -->
+        <div class="bg-card-bg p-8 rounded-lg border border-gray-700 mb-8">
+            <h2 class="text-3xl font-bold text-center mb-6">🎯 Accès à la Démo</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="text-center">
+                    <h3 class="text-xl font-bold mb-4 text-cyber">Interface Principale</h3>
+                    <a href="http://34.162.135.188/" 
+                       class="inline-block bg-cyber text-black px-8 py-4 rounded-lg font-bold hover:bg-green-400 transition-colors">
+                        🚀 Lancer la Démo
+                    </a>
+                    <p class="text-gray-400 mt-2">Interface complète avec toutes les fonctionnalités</p>
+                </div>
+                
+                <div class="text-center">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Page de Démonstration</h3>
+                    <a href="http://34.162.135.188/demo.html" 
+                       class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-500 transition-colors">
+                        📱 Démo Guidée
+                    </a>
+                    <p class="text-gray-400 mt-2">Présentation interactive des fonctionnalités</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Info -->
+        <div class="bg-card-bg p-6 rounded-lg border border-gray-700 mb-8">
+            <h2 class="text-2xl font-bold mb-4">⚙️ Informations Techniques</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-2 text-cyber">Configuration Serveur</h3>
+                    <ul class="text-gray-400 space-y-1">
+                        <li>• Modèle: Llama-2-7B-Chat-GGUF (Q4_K_M)</li>
+                        <li>• Contexte: 2048 tokens</li>
+                        <li>• Prédiction: 512 tokens max</li>
+                        <li>• Port: 8081 (interne)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-2 text-cyber">Fonctionnalités</h3>
+                    <ul class="text-gray-400 space-y-1">
+                        <li>• Mode démo intégré</li>
+                        <li>• Fallback automatique</li>
+                        <li>• Gestion d'erreurs robuste</li>
+                        <li>• Interface responsive</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repository Info -->
+        <div class="bg-card-bg p-6 rounded-lg border border-gray-700">
+            <h2 class="text-2xl font-bold mb-4">📦 Repository GitHub</h2>
+            <p class="text-gray-400 mb-4">Code source complet disponible sur GitHub avec toutes les améliorations:</p>
+            <a href="https://github.com/furaxx37-fr/uncensored-chat-llama-enhanced" 
+               class="inline-flex items-center bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                </svg>
+                Voir sur GitHub
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Check server status periodically
+        function updateStatus() {
+            fetch('/status.php')
+                .then(response => response.json())
+                .then(data => {
+                    const badge = document.getElementById('status-badge');
+                    if (data.server_ready) {
+                        badge.className = 'inline-flex items-center px-4 py-2 rounded-full bg-green-600 text-white mb-6';
+                        badge.innerHTML = '<div class="w-4 h-4 bg-green-300 rounded-full mr-2"></div>Serveur Llama Prêt ✅';
+                    } else if (data.server_running) {
+                        badge.className = 'inline-flex items-center px-4 py-2 rounded-full bg-yellow-600 text-white mb-6';
+                        badge.innerHTML = '<div class="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>Serveur en cours de chargement...';
+                    } else {
+                        badge.className = 'inline-flex items-center px-4 py-2 rounded-full bg-red-600 text-white mb-6';
+                        badge.innerHTML = '<div class="w-4 h-4 bg-red-300 rounded-full mr-2"></div>Mode Démo Uniquement';
+                    }
+                })
+                .catch(() => {
+                    const badge = document.getElementById('status-badge');
+                    badge.className = 'inline-flex items-center px-4 py-2 rounded-full bg-blue-600 text-white mb-6';
+                    badge.innerHTML = '<div class="w-4 h-4 bg-blue-300 rounded-full mr-2"></div>Mode Démo Disponible';
+                });
+        }
+
+        // Update status immediately and then every 10 seconds
+        updateStatus();
+        setInterval(updateStatus, 10000);
+    </script>
+</body>
+</html>
